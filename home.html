@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Quizzee Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
@@ -15,15 +15,16 @@
     <script>
         // If user directly opens home.html without login → send back to login
         if (!localStorage.getItem("quizzeeUser")) {
-            window.location.href = "index.html";
+            window.location.href = "index2.html";
         }
 
         // Logout function
         function logout() {
             localStorage.removeItem("quizzeeUser");
-            window.location.href = "index.html";
+            window.location.href = "index2.html";
         }
     </script>
 
 </body>
 </html>
+
