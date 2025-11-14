@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quizzee Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to Quizzee 🎉</h2>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        // If user directly opens home.html without login → send back to login
+        if (!localStorage.getItem("quizzeeUser")) {
+            window.location.href = "index.html";
+        }
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem("quizzeeUser");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
